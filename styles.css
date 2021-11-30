@@ -1,0 +1,163 @@
+/**************** 
+** Par convention, on définit d'abord les éléments html
+*/
+	html, body {
+		/* les elements html et body n'ont aucune marge */
+		margin: 0;
+		padding: 0;
+	}
+	
+	body { 
+		/* l'élément body se voit attribuer une police */
+		font-family: Arial,Georgia,"Lucida Grande","Lucida Sans Unicode",Helvetica,verdana,arial,sans-serif;
+		background-color: rgb(166, 193, 230); /* couleur de fond */
+		background-image: url(imagefond.jpg); /* image de fond */
+		background-position: left top; /* alignement à gauche et en haut */
+		background-repeat: repeat-x -y; /* afin de répéter l'image sur toute la longueur de l'élément */
+		height : 100%;
+	}
+
+	a { 
+		color: rgb(20, 135, 212); /* on donne une couleur à tous les liens du document */
+		text-decoration: none; /* on supprime leur soulignement */
+		background-color: rgb(166, 193, 230); /* couleur de fond */
+	}
+	
+	p {
+		margin: 15px;
+	}
+	
+/**************** 
+** ensuite on surcharge avec les classes
+*/ 
+	
+	.corps {
+		width: 1300px;/* on donne à l'enveloppe une largeur fixe */
+		margin: 0 auto;/* on la centre grace à la valeur auto pour les marges gauche et droite */
+	}
+	
+	body > .corps { /* seule la classe .corps, première descendante de l'élément body sera concernée */
+		background-color: rgb(166, 193, 230); /* couleur de fond */
+		background-image: url(logo.png); /* image de fond */
+		background-position: left top; /* alignement à gauche et en haut */
+		background-repeat: no-repeat; /* afin de ne pas répéter l'image sur toute la longueur de l'élément */
+	}
+	
+	.description {
+		color: #86837A;
+		font-family: Arial;
+		font-size:0.9em;
+	}
+	
+	.contenus {
+		width: 1200px;
+		padding-right: 30px;
+		padding-left: 50px;
+		padding-bottom: 2em;
+		color: #286762;
+		background-color: rgb(166, 193, 230); /* couleur de fond */
+		font-size:0.9em;
+	} 
+	.contenus h2 {
+		margin-left: 30px;
+		margin-bottom:0.3em;
+		line-height: 1.33em;
+		font-size: 1.8em;
+		font-weight: 200;
+	}
+	.contenus h2 a {
+		color: #28393A;
+	}
+	
+	.carte {
+		list-style: none;
+	}
+
+	.date {
+		width: 100px;
+		height: 30px;
+		float: left;
+		text-align:center;
+		color: #000000;
+	}
+	.jour {
+		font-size:1.2em;
+	}
+	.mois {
+		font-size:1.3em;
+		font-weight: bold;
+	}
+	.annee {
+		font-size:1.2em;
+	}
+	
+	.author {
+		margin: 15px
+	}
+	
+	.post {
+		margin-left: 100px;
+		margin-bottom: 24px;
+		border-bottom: 1px solid rgb(114, 163, 231);
+		box-shadow: 0px 4px 12px #28393A; /* effet 3D : décalage à droite, décalage en bas, dégradé, couleur */
+	}
+	.entry {
+		width: 1100px;
+	}
+	
+	.article {
+		height : 800px;
+		margin-left: 60px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid rgb(114, 163, 231);
+		box-shadow: 0px 4px 12px #28393A; /* effet 3D : décalage à droite, décalage en bas, dégradé, couleur */
+	}
+
+.subtitle {
+    font-size : 20px;
+    text-align:left ;
+
+}
+	
+/**************** 
+** enfin on surcharge avec les ID
+*/ 
+
+	#entete { 
+		width: 900px; /* largeur de l'entête */
+		height: 115px; /* hauteur de l'entête */
+		margin-left: 70px; /* la marge gauche est de 70 pixels soit 1020 pixel au total */
+		padding-bottom: 14px; /* le retrait du bas est de 24 points */
+		border-top: 8px solid #28393A; /* On définit aussi un bord haut d'épaisseur 8 pixels de style 'solid' et de couleur #28393A */
+		border-bottom: 1px solid rgb(114, 163, 231); /* puis un bord bas */
+		box-shadow: 0px 1px 1px rgb(203, 207, 255); /* ! propriété CSS3 : ne sera pas compris par tous les navigateurs ! */
+	}
+	
+	#logo { /* le bloc devient "flottant" à gauche */
+		float: left;
+		width: 430px;
+	}
+	
+	#logo h1 {
+		margin:15px 0px 0px 0px;
+	}
+	
+	#menu { 
+		float: left; /* le menu devient "flottant" à gauche */
+		margin: 20px 0px 0px 0px;
+		width: 970px;
+		padding:0;
+	}
+	
+	#menu td {/* le menu est placé dans un tableau dont la bordure droite est de couleur #CEC6B5, fine et  continue */
+		border-left : rgb(114, 163, 231) 5 thin solid;
+	}
+	
+	#menu a {
+		text-align: center; /* centre le texte */
+		text-transform: uppercase; /* transforme le texte en majuscule */
+	}
+	
+	#menu a:hover { /* le :hover spécifie un évenement */ 
+		text-shadow: 1px 1px #4955f3; /* ici on appliquera ces propriétés lorsque la souris sera au-dessus d'un lien du menu */
+	}
