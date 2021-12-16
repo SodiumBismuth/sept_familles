@@ -124,8 +124,6 @@
 }
 
 .text {
-	display: flex;
-	flex-direction: column;
 	margin-left: 10px
 }
 
@@ -138,11 +136,13 @@
 }
 
 .carte {
-	margin-right: 10px
+	margin-right: 10px;
+	padding-left: 10em;
+	width:15em
 }
 
 .carte img{
-	width:100%;
+	width:260px;
 	border:solid black 1px;
 }
 /**************** 
