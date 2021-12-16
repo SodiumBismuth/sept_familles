@@ -119,6 +119,32 @@
 
 }
 	
+.content {
+	display: flex;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px
+}
+
+.text img {
+	margin-top:2%;
+}
+
+.title {
+	margin-left: 10px
+}
+
+.carte {
+	margin-right: 10px
+}
+
+.carte img{
+	width:100%;
+	border:solid black 1px;
+}
 /**************** 
 ** enfin on surcharge avec les ID
 */ 

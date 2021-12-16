@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Histoire de l'informatique</title>
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+	<!-- Lien vers la feuille de style CSS -->
+</head>
+
+<body>
+	<div class='corps'>
+		<!-- Début du bloc du corps de la page -->
+		<div id='entete'>
+			<!-- Début du bloc d'entête du corps de la page -->
+			<div id='logo'>
+				<!-- Début du bloc logo -->
+				<h1><a href='index.html'>Spécialité NSI</a></h1> <!-- Titre de la page d'acceuil + lien vers cette page -->
+				<div class='description'>Histoire de l'informatique</div> <!-- Bloc sous-titre -->
+			</div> <!-- Fin du bloc logo -->
+			<br/>
+				<div id='menu'>
+					<table>
+						<tr>
+							<!-- Tableau de création des boutons de navigation -->
+							<td style="width:100px;text-align: center"> <a href='index.html' title="accueil du site">accueil</a> </td>
+							<td style="width:100px;text-align: center"> <a href='quizz.html' title="quizz">le quizz</a> </td>
+
+						</tr>
+					</table>
+				</div>
+		</div>
+        <div> 
+            <p> Herbert Simon a reçu le prix nobel de l'économie en 1978 :
+                <input type="radio" name="q1" id="v1"> vrai
+                <input type="radio" name="q1" id="f1"> faux
+            </p> 
+
+						<p id="RQ1"></p>
+            
+            <p>Marvin Minsky est le cofondateur du Massachusetts Institute of Technology (MIT) :
+                <input type="radio" name="q2" id="v2"> vrai
+                <input type="radio" name="q2" id="f2"> faux
+            </p>
+
+						<p id="RQ2"></p>
+
+            <p> Geoffrey Hinton est l'inventeur:
+              <select id="Q3">
+								<option value="0"> SÉLECTION </option>
+						    <option value="1">De l'intelligence artificielle</option>
+						    <option value="2">Du réseau de neuronne à capsules</option>
+                <option value="3">D'internet</option>
+                <option value="4">De la carte graphique</option>
+							</select>
+            </p>
+
+						<p id="RQ3"></p>
+
+            <p> Rose Dieng-Kuntz est nommée chevalier de la légion d'honneur en :
+              <select id="Q4"> 
+                <option value="0"> SÉLECTION </option>
+							  <option value="1">2002</option>
+                <option value="2">2003</option>
+                <option value="3">2004</option>
+                <option value="4">2005</option>
+                <option value="5">2006</option>
+							</select>
+            </p> 
+
+						<p id="RQ4"></p>
+            
+            <p> En quelle année est né Yann Le Cun ? (1935-1980) :
+              <input type="number" id="q6" name="Année"
+               min="1935" max="1980">
+
+
+						<p id="RQ5"></p>
+
+            <p> Qui est Cordelia Schmid: 
+            <input type="checkbox" id="1" name="scientifique ">
+            	<label for="scientifique">scientifique</label>
+            <input type="checkbox" id="2" name="chercheuse">
+            	<label for="chercheuse">chercheuse</label>
+            <input type="checkbox" id="3" name="mathématicienne">
+              <label for="mathématicienne">mathématicienne</label>
+            <input type="checkbox" id="4" name="informaticienne">
+              <label for="informaticienne">informaticienne</label> 
+            </p>
+
+						<p id="RQ6"></p>
+	
+						<input type="button" onclick="sendanswers()" value="Corriger">
+						<p id="NBR"></p>
+						<script src="quizz.js"></script>
